@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title color="light"><h1>GIPH APP</h1></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- <div class ="content"> -->
+        <ion-text color="light">
+            <h1>
+                GIF GENERATOR
+            </h1>
+        </ion-text>
+            <input type="text" placeholder="Search for a gif" width="100%" [(ngModel)]="searchTerm">
+            <button (click)="runTimer()"><b>SUBMIT</b></button> <p></p>
+                    <div style="text-align: center; display: inline-block">
+                        <div class="xxx" *ngFor="let item of items?.data" button (click)="openModal('custom-modal-1', item);">
+                            <img src={{item?.images?.downsized?.url}} > <br/>
+                                  {{item?.title}} <br/>
+                                 <button (click)="openModal('custom-modal-1', item?.images?.downsized?.url);">READ MORE</button>  <p>&nbsp; <br/><br/> &nbsp;</p><p></p>
+                        </div>   
+                    </div>
+
+                    <jw-modal id="custom-modal-1">
+                        <button (click)="closeModal('custom-modal-1');"><b>X</b></button> <br/>
+                          <div class="popup">
+                             <div style="font-family: Seravek"> <h1>{{bodyText?.title}} </h1> </div> 
+                              <img class="popupImg" src={{bodyText?.images?.downsized?.url}}> 
+                              <div class="popupTxt">
+                                  Bitly Gif Url: <a href="{{bodyText?.bitly_gif_url}}">{{bodyText?.bitly_gif_url}}</a> <br/>
+                                  Bitly Url: <a href="{{bodyText?.bitly_url}}">{{bodyText?.bitly_url}} </a><br/>
+                                  Content Url: <a href="{{bodyText?.content_url}}">{{bodyText?.content_url}}</a><br/>
+                                  Embed Url: <a href="{{bodyText?.embed_url}}">{{bodyText?.embed_url}} </a><br/>
+                                  Id: {{bodyText?.id}} <br/>
+                                  Import Datetime: {{bodyText?.import_datetime}} <br/>
+                                  Rating: {{bodyText?.rating}} <br/>   
+                                  Trendng Datetime: {{bodyText?.trending_date_time}} <br/>
+                                  Type: {{bodyText?.type}} <br/>
+                                  Url: <a href="{{bodyText?.url}}">{{bodyText?.url}}</a><br/>
+                                  Username: {{bodyText?.username}} <br/>
+                              </div>
+                          </div>
+                    </jw-modal>
+</ion-content>

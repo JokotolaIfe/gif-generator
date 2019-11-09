@@ -1,0 +1,114 @@
+
+
+.xxx{
+	display:inline-block;
+	border-bottom: 2px;
+	border-bottom-color: #2a2132;
+	color: white;
+	font-family: Seravek;
+	text-align: center;
+	width: 100%;
+    height: 360px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.container{
+    display: inline-table;
+}
+.popup{
+    display: inline-table;
+    /* margin: 3px; */
+    width: 100%;
+}
+
+jw-modal{
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2) !important; 
+}
+.popupImg{
+    width: 300px;
+	margin:3px;
+	float: left
+}
+
+.popupTxt{
+    font-family: Seravek;
+    /* margin: 13px; */
+    font-size: 19px;
+    line-height: 30px;
+    width: 250px;
+    float: right;
+}
+
+.yyy{
+	border-bottom: 2px;
+	border-bottom-color: #2a2132;
+	background-color: transparent;
+	color: white;
+	font-family: Seravek;
+	text-align: center;
+	/* width: 100% */
+}
+
+ion-content{
+	font-size: 20px;
+	color: white;
+	font-family:Seravek;
+	padding: 5px auto;
+    text-align: center;
+    background: linear-gradient(to right, #c31432, #240b36);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+
+	--background: linear-gradient(to right, #c31432, #240b36);
+	background-size: cover
+}
+
+img{
+	border-radius: 5%;
+	width: 360px;
+    height: 360px;
+}
+
+img:hover{
+	border-radius: 1%;
+	width: 360px;
+	height: 360px;
+	border: 3px solid;
+	border-color: greenyellow
+}
+
+a{
+	text-decoration: none;
+}
+
+input{
+	background-color: transparent;
+	height: 40px;
+	width: 65%;
+	border-radius: 15px;
+	padding-left: 16px;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: #240b36;
+}
+
+input:hover{
+	background-color: transparent;
+	height: 40px;
+	width: 65%;
+	border-radius: 15px;
+	padding-left: 16px;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: white;
+}
+
+button{
+	height: 45px;
+	font-family: sans-serif;
+}
